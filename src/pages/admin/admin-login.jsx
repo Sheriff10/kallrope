@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import storeToken from "../../functions/storeTokens";
 import Loader from "../components/loader";
+import AdminLayout from "./adminLayout";
 
 export default function AdminLogin() {
    const [username, setUsername] = useState("");

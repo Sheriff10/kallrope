@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import { logoutAdmin } from "../../functions/logout";
+import AdminLayout from "./adminLayout";
 
 export default function ViewEmergency() {
    const [emergencies, setEmergencies] = useState([]);
@@ -45,34 +46,33 @@ export default function ViewEmergency() {
       }
    };
    return (
-      <div className="emergencies pt-5">
-         <div className="container py-5">
-            <div className="col-lg-4 mx-auto">
-               <div className="header pb-4">
-                  <h1>Emergency</h1>
-               </div>
-               <div className="body">
-                  {emergencies.map((i, index) => (
-                     <div className="user-card bg-kal-darkgray p-3 rounded mb-3 bg-danger">
-                        <div className="head d-flex justify-content-between align-items-center text-light">
-                           <span className="fs-5 fw-bold">{i.subject}</span>
-                           <FaRegTrashAlt />
-                        </div>
-                        <div className="body">
-                           <div className="d-flex justify-content-between align-items-center">
-                              <div className="user-message">
-                                 <span>
-                                    {i.message}
-                                 </span>{" "}
-                                 <br />
+      <AdminLayout>
+         <div className="emergencies pt-5">
+            <div className="container py-5">
+               <div className="col-lg-4 mx-auto">
+                  <div className="header pb-4">
+                     <h1>Emergency</h1>
+                  </div>
+                  <div className="body">
+                     {emergencies.map((i, index) => (
+                        <div className="user-card bg-kal-darkgray p-3 rounded mb-3 bg-danger">
+                           <div className="head d-flex justify-content-between align-items-center text-light">
+                              <span className="fs-5 fw-bold">{i.subject}</span>
+                              <FaRegTrashAlt />
+                           </div>
+                           <div className="body">
+                              <div className="d-flex justify-content-between align-items-center">
+                                 <div className="user-message">
+                                    <span>{i.message}</span> <br />
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
-                  ))}
+                     ))}
+                  </div>
                </div>
             </div>
          </div>
-      </div>
+      </AdminLayout>
    );
 }

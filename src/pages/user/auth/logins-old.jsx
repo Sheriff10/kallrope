@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../components/header";
 
 export default function Signup() {
    const btnFunc = (img, title, link) => {
@@ -11,6 +12,7 @@ export default function Signup() {
    ];
    return (
       <div className="signup  py-5">
+         <Header />
          <div className="container mt-5">
             <div className="col-lg-4 col-12 mx-auto">
                <div className="email pt-5">

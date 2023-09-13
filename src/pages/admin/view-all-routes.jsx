@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaExclamationCircle, FaRegTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { logoutAdmin } from "../../functions/logout";
+import AdminLayout from "./adminLayout";
 
 export default function ViewAllRoutes() {
    const [allRoutes, setAllRoutes] = useState([]);
@@ -44,7 +45,8 @@ export default function ViewAllRoutes() {
       }
    };
    return (
-      <div className="emergencies pt-5">
+      <AdminLayout>
+         <div className="emergencies pt-5">
          <div className="container py-5">
             <div className="col-lg-4 mx-auto">
                <div className="header pb-4">
@@ -90,5 +92,6 @@ export default function ViewAllRoutes() {
             </div>
          </div>
       </div>
+      </AdminLayout>
    );
 }

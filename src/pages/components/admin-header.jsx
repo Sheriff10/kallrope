@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 import {
    FaBars,
    FaCarAlt,
+   FaExclamationCircle,
    FaHome,
    FaSignInAlt,
    FaTrafficLight,
    FaUser,
 } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-import { logoutUser } from "../../functions/logout";
-export default function Header() {
+import { logoutAdmin, logoutDriver } from "../../functions/logout";
+export default function AdminHeader() {
    const [scrolling, setScrolling] = useState(false);
    const [toggleMenu, setToggleMenu] = useState(true);
 
@@ -29,25 +30,24 @@ export default function Header() {
       };
    }, []);
 
-   const headerClasses = ["header", "position-fixed", "w-100", "py-2"];
+   const headerClasses = ["header", "zi-5", "position-fixed", "w-100", "py-2"];
    if (scrolling) {
       headerClasses.push("bg-kal-lightgrey");
    }
-
-   const token = window.sessionStorage.getItem("userAuthToken");
 
    const noAuthFunc = (title, icon, link) => {
       return { title, icon, link };
    };
    const noAuthArr = [
-      noAuthFunc("Home", <FaHome />, "/"),
-      noAuthFunc("Book a ride", <FaCarAlt />, "/auth/user/signup"),
+      noAuthFunc("Dashboard", <FaHome />, "/admin/login"),
       noAuthFunc(
-         "Become a driver",
-         <FaTrafficLight />,
-         "/apply/driver/information"
+         "Emergencies",
+         <FaExclamationCircle />,
+         "/admin/emergencies"
       ),
-      noAuthFunc("Login", <FaSignInAlt />, "/auth/user/login"),
+      noAuthFunc("Assign Driver Route", <FaTrafficLight />, "/admin/assign-route"),
+      noAuthFunc("Users", <FaSignInAlt />, "/admin/user-list"),
+      noAuthFunc("drivers", <FaSignInAlt />, "/admin/driver-list"),
    ];
 
    return (
@@ -59,25 +59,10 @@ export default function Header() {
                      <img src="/logo.png" alt="Kallrope" width={100} />
                   </Link>
                </div>
-               <div className="menu px-2 d-none">
-                  <div className="links align-items-center d-flex gap-4">
-                     <a href="#">Admin</a>
-                     <a href="#">Support</a>
-                     <a href="#">Notifications</a>
-                     <a href="#">
-                        <i className="bg-white d-flex justify-content-between align-items-center rounded-circle p-2">
-                           <FaUser />
-                        </i>
-                     </a>
-                     <span className="fs-5 kal-teal">
-                        <FaBars />
-                     </span>
-                  </div>
-               </div>
                <div className="menu px-2">
                   <div className="menu-box mx-3">
                      <div
-                        className={`bg-kal-lightgrey rounded position-absolute w-100 top-100  ${
+                        className={`bg-kal-lightgrey zi-5 rounded position-absolute w-100 top-100  ${
                            toggleMenu && "d-none"
                         }`}
                      >
@@ -96,13 +81,12 @@ export default function Header() {
                   <div className="links align-items-center d-flex gap-4">
                      <a href="#">Support</a>
                      <a href="#">
-                        <Link to={token == null ? "/auth/user/signup" : ""}>
-                           <button
-                              className="btn px-3 bg-kal-gold rounded-pill"
-                           >
-                              {token == null ? "Signup" : "Logout"}
-                           </button>
-                        </Link>
+                        <button
+                           className="btn px-3 bg-kal-gold rounded-pill"
+                           onClick={() => logoutAdmin()}
+                        >
+                           Logout
+                        </button>
                      </a>
                      <span
                         className="fs-5 kal-teal"

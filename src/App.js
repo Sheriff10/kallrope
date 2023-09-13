@@ -33,7 +33,6 @@ function App() {
    window.api = "https://yellow-coypu-tam.cyclic.app";
    return (
       <div className="App">
-         <Header />
          <BookingContextWrap>
             <Routes>
                <Route path="/" element={<Home />} />

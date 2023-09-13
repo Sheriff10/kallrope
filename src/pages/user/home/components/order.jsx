@@ -13,15 +13,28 @@ export default function Order() {
                <h1>Order a Ride!</h1>
             </div>
             <div className="body">
-               <div className="row">
-                  <div className="col-lg-6">
+               <div className="row justify-content-center">
+                  <div className="col-lg-6 mx-auto">
                      <div className="o-card shadow rounded my-4">
                         <div className="img-wrap">
-                           <img
+                           <iframe
+                              width="100%"
+                              height="600"
+                              frameborder="0"
+                              scrolling="no"
+                              marginheight="0"
+                              marginwidth="0"
+                              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Table%20Ilorin%20+(School%20stuff%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                           >
+                              <a href="https://www.maps.ie/population/">
+                                 Population mapping
+                              </a>
+                           </iframe>
+                           {/* <img
                               src="location.webp"
                               alt="Map"
                               className="img-fluid w-100 rounded"
-                           />
+                           /> */}
                         </div>
                         <div className="form p-3">
                            <div className="header p-4  text-center">
@@ -65,7 +78,7 @@ export default function Order() {
                   <div className="col-lg-6 d-flex align-items-center col-12">
                      <div className="btn-wrap w-100">
                         <div className="row">
-                           {dum.map((i) => (
+                           {/* {dum.map((i) => (
                               <div
                                  className="col-lg-6 py-3 bg-dark text-center justify-content-center"
                                  key={i}
@@ -73,10 +86,10 @@ export default function Order() {
                                  <div className="bg-kal-gold py-4 p-2 rounded">
                                     <span className="fs-4 fw-bold">Buses</span>{" "}
                                     <br />
-                                    <span>Lorem ipsum dolor sit amet.</span>
+                                    <span>---</span>
                                  </div>
                               </div>
-                           ))}
+                           ))} */}
                         </div>
                      </div>
                   </div>

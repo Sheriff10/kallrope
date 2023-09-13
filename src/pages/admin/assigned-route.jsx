@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { logoutAdmin } from "../../functions/logout";
 import Loader from "../components/loader";
+import AdminLayout from "./adminLayout";
 
 export default function AdminAssignedRoute() {
    const routes = [
@@ -109,114 +110,124 @@ export default function AdminAssignedRoute() {
    };
 
    return (
-      <div className="ass-route py-5">
-         <div className="container mt-5">
-            <div className="col-lg-8 mx-auto">
-               <div className="row">
-                  <div className="col-lg-6 mx-auto">
-                     <Loader loading={loading} />
-                     <ToastContainer theme="colored" />
-                     <form
-                        className="form-wrap p-4 rounded"
-                        onSubmit={handleSubmit}
-                     >
-                        <div className="header col-12 mb-3">
-                           <h3>Assign Route to Driver</h3>
-                        </div>
-                        <div className="form-group mb-4">
-                           <label className="fw-bold">Driver</label>
-                           <select
-                              className="form-select"
-                              value={driver}
-                              onChange={(e) => setDriver(e.target.value)}
-                              required
-                           >
-                              <option value={""} defaultValue>
-                                 Select Driver
-                              </option>
-                              {stats.map((i, index) => (
-                                 <option value={i.driver_ID} key={index}>
-                                    {i.firstname}
-                                 </option>
-                              ))}
-                           </select>
-                        </div>
-                        <div className="form-group mb-4">
-                           <label className="fw-bold">Pickup</label>
-                           <select
-                              className="form-select"
-                              required
-                              value={pickup}
-                              onChange={(e) => setPickup(e.target.value)}
-                           >
-                              <option value={""} defaultValue>
-                                 Select Pickup Location
-                              </option>
-                              {routes.map((i, index) => (
-                                 <option value={i} key={index}>
-                                    {i}
-                                 </option>
-                              ))}
-                           </select>
-                        </div>
-                        <div className="form-group mb-4">
-                           <label className="fw-bold">Final Destination</label>
-                           <select
-                              className="form-select"
-                              required
-                              value={destination}
-                              onChange={(e) => setDestination(e.target.value)}
-                           >
-                              <option value={""} defaultValue>
-                                 Select Dropoff Location
-                              </option>
-                              {routes.map((i, index) => (
-                                 <option value={i} key={index}>
-                                    {i}
-                                 </option>
-                              ))}
-                           </select>
-                        </div>
-                        <div className="text mb-4">
-                           <label>Total Passenger</label>
-                           <select
-                              className="form-select"
-                              required
-                              value={passenger}
-                              onChange={(e) => setPassenger(e.target.value)}
-                           >
-                              {routes.map((i, index) => (
-                                 <option value={index + 1} key={index}>
-                                    {index + 1}
-                                 </option>
-                              ))}
-                           </select>
-                           <div className="form-group mt-4">
-                              <label>Time</label>
-                              <input
-                                 type="time"
-                                 className="form-control"
+      <AdminLayout>
+         <div className="ass-route py-5">
+            <div className="container mt-5">
+               <div className="col-lg-8 mx-auto">
+                  <div className="row">
+                     <div className="col-lg-6 mx-auto">
+                        <Loader loading={loading} />
+                        <ToastContainer theme="colored" />
+                        <form
+                           className="form-wrap p-4 rounded"
+                           onSubmit={handleSubmit}
+                        >
+                           <div className="header col-12 mb-3">
+                              <h3>Assign Route to Driver</h3>
+                           </div>
+                           <div className="form-group mb-4">
+                              <label className="fw-bold">Driver</label>
+                              <select
+                                 className="form-select"
+                                 value={driver}
+                                 onChange={(e) => setDriver(e.target.value)}
                                  required
-                                 value={time}
-                                 onChange={(e) => setTime(e.target.value)}
-                              />
+                              >
+                                 <option value={""} defaultValue>
+                                    Select Driver
+                                 </option>
+                                 {stats.map((i, index) => (
+                                    <option value={i.driver_ID} key={index}>
+                                       {i.firstname}
+                                    </option>
+                                 ))}
+                              </select>
                            </div>
-                        </div>
-                        <div className="btn-wrap d-flex gap-2 mb-4">
-                           <div className="col">
-                              <button className="btn btn-block bg-kal-gold w-100">
-                                 Assign Route
-                              </button>
+                           <div className="form-group mb-4">
+                              <label className="fw-bold">Pickup</label>
+                              <select
+                                 className="form-select"
+                                 required
+                                 value={pickup}
+                                 onChange={(e) => setPickup(e.target.value)}
+                              >
+                                 <option value={""} defaultValue>
+                                    Select Pickup Location
+                                 </option>
+                                 {routes.map((i, index) => (
+                                    <option value={i} key={index}>
+                                       {i}
+                                    </option>
+                                 ))}
+                              </select>
                            </div>
-                        </div>
-                        <div className="wrap d-flex justify-content-between align-items-center">
-                           <Link to={'view-all'}> View All Assigned Route</Link> <FaArrowRight />
-                        </div>
-                     </form>
+                           <div className="form-group mb-4">
+                              <label className="fw-bold">
+                                 Final Destination
+                              </label>
+                              <select
+                                 className="form-select"
+                                 required
+                                 value={destination}
+                                 onChange={(e) =>
+                                    setDestination(e.target.value)
+                                 }
+                              >
+                                 <option value={""} defaultValue>
+                                    Select Dropoff Location
+                                 </option>
+                                 {routes.map((i, index) => (
+                                    <option value={i} key={index}>
+                                       {i}
+                                    </option>
+                                 ))}
+                              </select>
+                           </div>
+                           <div className="text mb-4">
+                              <label>Total Passenger</label>
+                              <select
+                                 className="form-select"
+                                 required
+                                 value={passenger}
+                                 onChange={(e) => setPassenger(e.target.value)}
+                              >
+                                 {routes.map((i, index) => (
+                                    <option value={index + 1} key={index}>
+                                       {index + 1}
+                                    </option>
+                                 ))}
+                              </select>
+                              <div className="form-group mt-4">
+                                 <label>Time</label>
+                                 <input
+                                    type="time"
+                                    className="form-control"
+                                    required
+                                    value={time}
+                                    onChange={(e) => setTime(e.target.value)}
+                                 />
+                              </div>
+                           </div>
+                           <div className="btn-wrap d-flex gap-2 mb-4">
+                              <div className="col">
+                                 <button className="btn btn-block bg-kal-gold w-100">
+                                    Assign Route
+                                 </button>
+                              </div>
+                           </div>
+                           <div className="wrap d-flex justify-content-between align-items-center">
+                              <Link to={"view-all"}>
+                                 {" "}
+                                 View All Assigned Route
+                              </Link>{" "}
+                              <FaArrowRight />
+                           </div>
+                        </form>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
+      </AdminLayout>
    );
 }

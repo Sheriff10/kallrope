@@ -3,8 +3,11 @@ import React, { useReducer, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import Loader from "../../components/loader";
-import errorReducer, { INITIAL_ERROR_STATE } from "../../driver/apply/errorReducer";
+import errorReducer, {
+   INITIAL_ERROR_STATE,
+} from "../../driver/apply/errorReducer";
 import { ToastContainer, toast } from "react-toastify";
+import Header from "../../components/header";
 
 export default function UserSignup() {
    const [firstname, setFirstname] = useState("");
@@ -80,6 +83,8 @@ export default function UserSignup() {
       }
    };
    return (
+      <>
+         <Header />
          <div className="info py-5">
             <div className="container mt-5">
                <Loader loading={loading} />
@@ -191,9 +196,9 @@ export default function UserSignup() {
                            </div>
                         </div>
                         <div className="cap d-flex justify-content-between">
-                           <Link to={"/driver/login"}>
+                           <Link to={"/auth/user/login"}>
                               {" "}
-                              Already a driver? Login
+                              Already registered? Login
                            </Link>
                         </div>
                         <div className="btn-wrap d-flex justify-content-end py-3 mt-4">
@@ -206,5 +211,6 @@ export default function UserSignup() {
                </div>
             </div>
          </div>
+      </>
    );
 }
