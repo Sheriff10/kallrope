@@ -1,0 +1,228 @@
+[
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "terminus tipper garage, tanke",
+      "price": 250
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "MFM, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "Oko Oba, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "Ajanakun, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "Oke Odo, tanke",
+      "price": 200
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "School Gate",
+      "price": 250
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "Offa garage",
+      "price": 400
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "School Park (P.S)",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "MFM, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "Oko Oba, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "Ajanakun, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "Oke Odo, tanke",
+      "price": 200
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "School Gate",
+      "price": 250
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "Offa garage",
+      "price": 400
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "terminus tipper garage, tanke",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "MFM, Tanke",
+      "destination": "Oko Oba, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "MFM, Tanke",
+      "destination": "Ajanakun, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "MFM, Tanke",
+      "destination": "Oke Odo, tanke",
+      "price": 200
+    },
+    {
+      "pickup": "MFM, Tanke",
+      "destination": "School Gate",
+      "price": 250
+    },
+    {
+      "pickup": "MFM, Tanke",
+      "destination": "Offa garage",
+      "price": 400
+    },
+    {
+      "pickup": "MFM, Tanke",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "MFM, Tanke",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "Oko Oba, Tanke",
+      "destination": "Ajanakun, Tanke",
+      "price": 200
+    },
+    {
+      "pickup": "Oko Oba, Tanke",
+      "destination": "Oke Odo, tanke",
+      "price": 200
+    },
+    {
+      "pickup": "Oko Oba, Tanke",
+      "destination": "School Gate",
+      "price": 250
+    },
+    {
+      "pickup": "Oko Oba, Tanke",
+      "destination": "Offa garage",
+      "price": 400
+    },
+    {
+      "pickup": "Oko Oba, Tanke",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "Oko Oba, Tanke",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "Ajanakun, Tanke",
+      "destination": "Oke Odo, tanke",
+      "price": 200
+    },
+    {
+      "pickup": "Ajanakun, Tanke",
+      "destination": "School Gate",
+      "price": 250
+    },
+    {
+      "pickup": "Ajanakun, Tanke",
+      "destination": "Offa garage",
+      "price": 400
+    },
+    {
+      "pickup": "Ajanakun, Tanke",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "Ajanakun, Tanke",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "Oke Odo, tanke",
+      "destination": "School Gate",
+      "price": 250
+    },
+    {
+      "pickup": "Oke Odo, tanke",
+      "destination": "Offa garage",
+      "price": 400
+    },
+    {
+      "pickup": "Oke Odo, tanke",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "Oke Odo, tanke",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "School Gate",
+      "destination": "Offa garage",
+      "price": 400
+    },
+    {
+      "pickup": "School Gate",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "School Gate",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "Offa garage",
+      "destination": "Post-Office",
+      "price": 400
+    },
+    {
+      "pickup": "Offa garage",
+      "destination": "Challenge",
+      "price": 400
+    },
+    {
+      "pickup": "Post-Office",
+      "destination": "Challenge",
+      "price": 400
+    }
+  ]
+  

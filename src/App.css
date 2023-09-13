@@ -1,0 +1,63 @@
+.kal-teal {
+   color: #008080;
+}
+.bg-kal-teal {
+  background-color: #008080;
+}
+
+.kal-gold {
+  color: #FFD700;
+}
+.bg-kal-gold {
+ background-color: #FFD700;
+}
+
+.kal-orange {
+  color: #FF5733;
+}
+.bg-kal-orange {
+ background-color: #FF5733;
+}
+.kal-lightgrey {
+  color: #F5F5F5;
+}
+.bg-kal-lightgrey {
+ background-color: #F5F5F5;
+}
+
+.kal-darkgray {
+  color: #D9D9D9;
+}
+.bg-kal-darkgray {
+ background-color: #D9D9D9;
+}
+
+.min-h-100vh{
+  min-height: 100vh;
+}
+
+.min-h-80vh{
+  min-height: 80vh;
+}
+
+.min-h-70vh{
+  min-height: 70vh;
+}
+.min-h-60vh{
+  min-height: 60vh;
+}
+.min-h-50vh{
+  min-height: 50vh;
+}
+.trans {
+  transform: all .5s ease;
+}
+ul li{
+  list-style-type: none;
+}
+.loader{
+  z-index: 10;
+}
+.zi-5{
+  z-index: 5;
+}
