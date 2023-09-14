@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Order() {
@@ -75,21 +76,33 @@ export default function Order() {
                         </div>
                      </div>
                   </div>
-                  <div className="col-lg-6 d-flex align-items-center col-12">
+                  <div className="col-lg-6 d-flex col-12">
                      <div className="btn-wrap w-100">
                         <div className="row">
-                           {/* {dum.map((i) => (
-                              <div
-                                 className="col-lg-6 py-3 bg-dark text-center justify-content-center"
-                                 key={i}
-                              >
-                                 <div className="bg-kal-gold py-4 p-2 rounded">
-                                    <span className="fs-4 fw-bold">Buses</span>{" "}
-                                    <br />
-                                    <span>---</span>
+                           <div className="col">
+                              <div className="header">
+                                 <h1>Avalaible Busses</h1>
+                              </div>
+                              <div className="body">
+                                 <div className="car-container d-flex gap-3 align-items-center border-1 border-info justify-content-betn">
+                                    <div className="img-wrap">
+                                       <span className="fs-1" ><FaCar /></span>
+                                    </div>
+                                    <div className="text">
+                                       <span>Bus 1</span> <br />
+                                       <span>Location: School Park (P.S) </span>
+                                    </div>
+                                    <div className="text">
+                                       <span>Bus 2</span> <br />
+                                       <span>Location: Oke-odo</span>
+                                    </div>
+                                    <div className="text">
+                                       <span>Bus 3</span> <br />
+                                       <span>Location: School Gate</span>
+                                    </div>
                                  </div>
                               </div>
-                           ))} */}
+                           </div>
                         </div>
                      </div>
                   </div>
