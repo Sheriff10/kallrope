@@ -52,14 +52,14 @@ export default function Panic() {
                         <div className="user-card  p-3 rounded mb-3 bg-kal-teal">
                            <div className="head d-flex justify-content-between align-items-center text-light">
                               <span className="fs-5 fw-bold">
-                                 Driver Insulted{" "}
+                                 Panic from {i.user_name}
                               </span>
                               <FaRegTrashAlt />
                            </div>
                            <div className="body">
                               <div className="d-flex justify-content-between align-items-center">
                                  <div className="user-data">
-                                    <span>From user {i.firstname} </span> <br />
+                                    <span>From user with id  {i.user_ID} </span> <br />
                                     <small>{i.message}</small>
                                  </div>
                                  <div className="img">
