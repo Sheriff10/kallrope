@@ -78,27 +78,43 @@ export default function Order() {
                   </div>
                   <div className="col-lg-6 d-flex col-12">
                      <div className="btn-wrap w-100">
-                        <div className="row">
-                           <div className="col">
-                              <div className="header">
-                                 <h1>Avalaible Busses</h1>
-                              </div>
-                              <div className="body">
-                                 <div className="car-container d-flex gap-3 align-items-center border-1 border-info justify-content-betn">
+                        <div className="col">
+                           <div className="header">
+                              <h1>Avalaible Busses</h1>
+                           </div>
+                           <div className="body">
+                              <div className="car-container gap-3 align-items-center border-1 border-info justify-content-betn">
+                                 <div className="wrap bg-kal-gold mb-4 rounded px-3 py-1">
                                     <div className="img-wrap">
-                                       <span className="fs-1" ><FaCar /></span>
+                                       <span className="fs-1">
+                                          <FaCar />
+                                       </span>
                                     </div>
                                     <div className="text">
                                        <span>Bus 1</span> <br />
                                        <span>Location: School Park (P.S) </span>
                                     </div>
-                                    <div className="text">
-                                       <span>Bus 2</span> <br />
-                                       <span>Location: Oke-odo</span>
+                                 </div>
+                                 <div className="wrap bg-dark text-light rounded px-3 py-1">
+                                    <div className="img-wrap">
+                                       <span className="fs-1">
+                                          <FaCar />
+                                       </span>
                                     </div>
                                     <div className="text">
-                                       <span>Bus 3</span> <br />
-                                       <span>Location: School Gate</span>
+                                       <span>Bus 1</span> <br />
+                                       <span>Location: School Park (P.S) </span>
+                                    </div>
+                                 </div>
+                                 <div className="wrap bg-kal-gold mt-4 rounded px-3 py-1">
+                                    <div className="img-wrap">
+                                       <span className="fs-1">
+                                          <FaCar />
+                                       </span>
+                                    </div>
+                                    <div className="text">
+                                       <span>Bus 1</span> <br />
+                                       <span>Location: School Park (P.S) </span>
                                     </div>
                                  </div>
                               </div>
