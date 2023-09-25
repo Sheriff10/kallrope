@@ -3,7 +3,6 @@ import { FaCar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Order() {
-   const dum = [1, 2, 3];
 
    const token = window.sessionStorage.getItem("userAuthToken");
    console.log(token);
@@ -21,6 +20,7 @@ export default function Order() {
                            <iframe
                               width="100%"
                               height="600"
+                              title="things"
                               frameborder="0"
                               scrolling="no"
                               marginheight="0"
