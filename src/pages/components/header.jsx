@@ -99,7 +99,7 @@ export default function Header() {
                         <Link to={token == null ? "/auth/user/signup" : ""}>
                            <button
                               className="btn px-3 bg-kal-gold rounded-pill"
-                              onClick={() => {token == null ? "" : logoutUser}}
+                              // onClick={() => {token == null ? "" : logoutUser}}
                            >
                               {token == null ? "Signup" : "Logout"}
                            </button>
