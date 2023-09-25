@@ -102,8 +102,8 @@ export default function Order() {
                                        </span>
                                     </div>
                                     <div className="text">
-                                       <span>Bus 1</span> <br />
-                                       <span>Location: School Park (P.S) </span>
+                                       <span>Bus 2</span> <br />
+                                       <span>Location: Tipper-Garage </span>
                                     </div>
                                  </div>
                                  <div className="wrap bg-kal-gold mt-4 rounded px-3 py-1">
@@ -113,8 +113,8 @@ export default function Order() {
                                        </span>
                                     </div>
                                     <div className="text">
-                                       <span>Bus 1</span> <br />
-                                       <span>Location: School Park (P.S) </span>
+                                       <span>Bus 3</span> <br />
+                                       <span>Location: Oke-odo junction </span>
                                     </div>
                                  </div>
                               </div>
