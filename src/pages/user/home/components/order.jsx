@@ -80,7 +80,7 @@ export default function Order() {
                      <div className="btn-wrap w-100">
                         <div className="col">
                            <div className="header">
-                              <h1>Avalaible Busses</h1>
+                              <h1>Available buses</h1>
                            </div>
                            <div className="body">
                               <div className="car-container gap-3 align-items-center border-1 border-info justify-content-betn">
