@@ -27,6 +27,8 @@ import ViewAllRoutes from "./pages/admin/view-all-routes";
 import UserSignup from "./pages/user/auth/signup";
 import UserLogin from "./pages/user/auth/user-login";
 import BookingContextWrap from "./functions/bookingContext";
+import CheckOut from "./pages/user/book/checkout";
+import Ticket from "./pages/user/book/ticket";
 
 function App() {
    // window.api = "http://localhost:5000";
@@ -40,6 +42,8 @@ function App() {
                {/* Booking routes */}
                <Route path="/booking" element={<Book />} />
                <Route path="/booking/route" element={<BookingRoute />} />
+               <Route path="/booking/route/checkout" element={<CheckOut />} />
+               <Route path="/booking/route/checkout/ticket" element={<Ticket />} />
 
                {/* Registration Routes */}
                <Route path="/auth/information" element={<Information />} />

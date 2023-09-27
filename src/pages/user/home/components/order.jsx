@@ -1,11 +1,11 @@
 import React from "react";
 import { FaCar } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Order() {
 
    const token = window.sessionStorage.getItem("userAuthToken");
-   console.log(token);
+   const navi = useNavigate()
    return (
       <div className="order">
          <div className="container">
@@ -84,7 +84,7 @@ export default function Order() {
                            </div>
                            <div className="body">
                               <div className="car-container gap-3 align-items-center border-1 border-info justify-content-betn">
-                                 <div className="wrap bg-kal-gold mb-4 rounded px-3 py-1">
+                                 <div className="wrap bg-kal-gold mb-4 rounded px-3 py-1" onClick={() => navi("/booking?bus=bus-1")}>
                                     <div className="img-wrap">
                                        <span className="fs-1">
                                           <FaCar />
