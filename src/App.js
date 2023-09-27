@@ -29,6 +29,7 @@ import UserLogin from "./pages/user/auth/user-login";
 import BookingContextWrap from "./functions/bookingContext";
 import CheckOut from "./pages/user/book/checkout";
 import Ticket from "./pages/user/book/ticket";
+import VerifyTicket from "./pages/driver/dashboard/verify-ticket";
 
 function App() {
    // window.api = "http://localhost:5000";
@@ -54,6 +55,7 @@ function App() {
                {/* Driver Routes */}
                <Route path="/driver/login" element={<DriverLogin />} />
                <Route path="/driver/dashboard" element={<DriverDashboard />} />
+               <Route path="/driver/verify-ticket" element={<VerifyTicket />} />
                <Route
                   path="/driver/assigned-route"
                   element={<AssignedRoute />}

@@ -4,6 +4,7 @@ import {
    FaCarAlt,
    FaHome,
    FaSignInAlt,
+   FaTicketAlt,
    FaTrafficLight,
    FaUser,
 } from "react-icons/fa";
@@ -40,9 +41,9 @@ export default function DriverHeader() {
    const noAuthArr = [
       noAuthFunc("Dashboard", <FaHome />, "/driver/dashboard"),
       noAuthFunc(
-         "Emergency Message",
-         <FaCarAlt />,
-         "/driver/dashboard#emergency-message"
+         "Verify Tikcet ID",
+         <FaTicketAlt />,
+         "/driver/verify-ticket"
       ),
       noAuthFunc("KYC Verification", <FaTrafficLight />, "/apply/driver"),
       noAuthFunc("Home Page", <FaSignInAlt />, "/"),
