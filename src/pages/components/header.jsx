@@ -77,7 +77,7 @@ export default function Header() {
                <div className="menu px-2">
                   <div className="menu-box mx-3">
                      <div
-                        className={`bg-kal-lightgrey rounded position-absolute w-100 top-100  ${
+                        className={`bg-kal-lightgrey rounded position-absolute w-100 top-100 kk ${
                            toggleMenu && "d-none"
                         }`}
                      >

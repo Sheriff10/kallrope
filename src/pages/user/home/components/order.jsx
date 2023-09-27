@@ -3,9 +3,13 @@ import { FaCar } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Order() {
-
    const token = window.sessionStorage.getItem("userAuthToken");
-   const navi = useNavigate()
+   const navi = useNavigate();
+
+   const bookCar = () => {
+      if (token === null) return navi("/auth/user/login");
+      navi("booking");
+   };
    return (
       <div className="order">
          <div className="container">
@@ -84,7 +88,10 @@ export default function Order() {
                            </div>
                            <div className="body">
                               <div className="car-container gap-3 align-items-center border-1 border-info justify-content-betn">
-                                 <div className="wrap bg-kal-gold mb-4 rounded px-3 py-1" onClick={() => navi("/booking?bus=bus-1")}>
+                                 <div
+                                    className="wrap bg-kal-gold mb-4 rounded px-3 py-1"
+                                    onClick={bookCar}
+                                 >
                                     <div className="img-wrap">
                                        <span className="fs-1">
                                           <FaCar />
@@ -95,7 +102,10 @@ export default function Order() {
                                        <span>Location: School Park (P.S) </span>
                                     </div>
                                  </div>
-                                 <div className="wrap bg-dark text-light rounded px-3 py-1">
+                                 <div
+                                    className="wrap bg-dark text-light rounded px-3 py-1"
+                                    onClick={bookCar}
+                                 >
                                     <div className="img-wrap">
                                        <span className="fs-1">
                                           <FaCar />
@@ -106,7 +116,10 @@ export default function Order() {
                                        <span>Location: Tipper-Garage </span>
                                     </div>
                                  </div>
-                                 <div className="wrap bg-kal-gold mt-4 rounded px-3 py-1">
+                                 <div
+                                    className="wrap bg-kal-gold mt-4 rounded px-3 py-1"
+                                    onClick={bookCar}
+                                 >
                                     <div className="img-wrap">
                                        <span className="fs-1">
                                           <FaCar />

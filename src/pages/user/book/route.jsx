@@ -30,6 +30,7 @@ export default function BookingRoute() {
       dispatch({ type: "SET_PICKUP", payload: pickup });
       dispatch({ type: "SET_DESTINATION", payload: destination });
       console.log(state);
+      navi('checkout')
    };
 
    const routes = [

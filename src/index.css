@@ -29,3 +29,6 @@ a{
 .menu-box a:hover, .menu-box a.active {
   background: #ffe600;
 }
+.header{
+  z-index: 10;
+}
